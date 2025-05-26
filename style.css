@@ -68,6 +68,29 @@ body {
     background-color: red;
     margin-top: 10px;
   }
+
+  .services {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  .services h2 {
+    margin-bottom: 1rem;
+    color: #004aad;
+  }
+  .services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
   
   footer {
     background-color: #215123;
@@ -75,4 +98,3 @@ body {
     padding: 1rem;
     text-align: center;
   }
-  

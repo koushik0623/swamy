@@ -14,18 +14,19 @@
   </header>
 
   <div class="banner">
-    <img src="Screenshot 2025-05-26 145753.png" alt="D.T.V.S. Swamy Profile and Partners"/>
+    <img src="C:\Users\DEll\Downloads\Screenshot 2025-05-26 145753.png" alt="D.T.V.S. Swamy Profile and Partners"/>
     <div class="banner-content">
       <h2>Trusted Insurance & Financial Consultant</h2>
-      <p>
-        Partnering with top companies like TATA AIA, Star Health, Prudent, Airtel Bank, and others to offer comprehensive life, health, and financial services.
-      </p>
-      <button class="button" onclick="openForm()">Get a Free Quote</button>
+      <p>Partnering with top companies like TATA AIA, Star Health, Prudent, Airtel Bank, and others to offer comprehensive life, health, and financial services.</p>
+      <button class="button" onclick="openForm('quote')">Get a Free Quote</button>
     </div>
   </div>
 
-  <div class="form-popup" id="quoteForm">
-    <h3>Request a Free Quote</h3>
+  <div class="overlay" id="overlay" onclick="closeForm()"></div>
+
+  <!-- Popup Forms -->
+  <div class="form-popup" id="form-quote">
+    <h3>Get a Free Quote</h3>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
@@ -36,14 +37,74 @@
     </form>
   </div>
 
+  <div class="form-popup" id="form-life">
+    <h3>Life Insurance</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone Number" required />
+      <textarea placeholder="Interested in Life Insurance" rows="4"></textarea>
+      <button type="submit" class="button">Submit</button>
+      <button type="button" class="button button-cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+  <div class="form-popup" id="form-health">
+    <h3>Health Insurance</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone Number" required />
+      <textarea placeholder="Interested in Health Insurance" rows="4"></textarea>
+      <button type="submit" class="button">Submit</button>
+      <button type="button" class="button button-cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+  <div class="form-popup" id="form-mutual">
+    <h3>Mutual Fund Investment</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone Number" required />
+      <textarea placeholder="Interested in Mutual Funds" rows="4"></textarea>
+      <button type="submit" class="button">Submit</button>
+      <button type="button" class="button button-cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+  <div class="form-popup" id="form-retirement">
+    <h3>Retirement Planning</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone Number" required />
+      <textarea placeholder="Interested in Retirement Planning" rows="4"></textarea>
+      <button type="submit" class="button">Submit</button>
+      <button type="button" class="button button-cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+  <div class="form-popup" id="form-child">
+    <h3>Child Education Plans</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone Number" required />
+      <textarea placeholder="Interested in Child Education Plans" rows="4"></textarea>
+      <button type="submit" class="button">Submit</button>
+      <button type="button" class="button button-cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
   <div class="services">
     <h2>Our Services</h2>
     <div class="services-list">
-      <button class="service">Life Insurance</button>
-      <button class="service">Health Insurance</button>
-      <button class="service">Mutual Fund Investment</button>
-      <button class="service">Retirement Planning</button>
-      <button class="service">Child Education Plans</button>
+      <button class="service" onclick="openForm('life')">Life Insurance</button>
+      <button class="service" onclick="openForm('health')">Health Insurance</button>
+      <button class="service" onclick="openForm('mutual')">Mutual Fund Investment</button>
+      <button class="service" onclick="openForm('retirement')">Retirement Planning</button>
+      <button class="service" onclick="openForm('child')">Child Education Plans</button>
     </div>
   </div>
 

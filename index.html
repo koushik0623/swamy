@@ -1,113 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D.T.V.S. Swamy - Financial Planning</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Swamy Services</title>
 </head>
 <body>
+  <h1>Welcome to the main site!</h1>
+  <button id="logoutBtn">Logout</button>
 
-  <header>
-    <h1>D.T.V.S. Swamy</h1>
-    <p>One Stop Solution for All Financial Planning</p>
-  </header>
-
-  <div class="banner">
-    <img src="C:\Users\DEll\Downloads\Screenshot 2025-05-26 145753 (1).png"alt="D.T.V.S. Swamy Profile and Partners" />
-    <div class="banner-content">
-      <h2>Trusted Insurance & Financial Consultant</h2>
-      <p>
-        Partnering with top companies like TATA AIA, Star Health, Prudent, Airtel Bank, and others to offer comprehensive life, health, and financial services.
-      </p>
-      <button class="button" onclick="openForm('general')">Get a Free Quote</button>
-    </div>
-  </div>
-
-  <div class="form-popup" id="quoteForm">
-    <h3>Request a Free Quote</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone Number" required />
-      <textarea placeholder="Your Message" rows="4"></textarea>
-      <button type="submit" class="buttons">Submit</button>
-      <button type="button" class="buttons buttons-cancel" onclick="closeForm()">Cancel</button>
-    </form>
-  </div>
-
-  <div class="services-layout">
-    <!-- Service 1 -->
-    <h2>Our Services</h2>
-    <div class="service-row">
-      <button class="service" onclick="openForm('life')">Life Insurance</button>
-      <div class="side-buttons">
-        <a href="https://licindia.in" target="_blank"><button class="button">LIC of India</button></a>
-        <a href="https://www.hdfclife.com" target="_blank"><button class="button">HDFC Life</button></a>
-        <a href="https://www.tataaia.com" target="_blank"><button class="button">TATA AIA Life</button></a>
-      </div>
-    </div>
-
-    <!-- Service 2 -->
-    <div class="service-row">
-      <button class="service" onclick="openForm('health')">Health Insurance</button>
-      <div class="side-buttons">
-        <a href="https://www.starhealth.in" target="_blank"><button class="button">Star Health</button></a>
-        <a href="https://www.nivabupa.com" target="_blank"><button class="button">Niva Bupa</button></a>
-        <a href="https://www.careinsurance.com" target="_blank"><button class="button">Care Health</button></a>
-      </div>
-    </div>
-
-    <!-- Service 3 -->
-    <div class="service-row">
-      <button class="service" onclick="openForm('mutual')">Mutual Fund Investment</button>
-      <div class="side-buttons">
-        <a href="https://www.prudentcorporate.com" target="_blank"><button class="button">Prudent</button></a>
-        <a href="https://www.icicipruamc.com" target="_blank"><button class="button">ICICI Prudential</button></a>
-        <a href="https://www.hdfcfund.com" target="_blank"><button class="button">HDFC Mutual</button></a>
-      </div>
-    </div>
-
-    <!-- Service 4 -->
-    <div class="service-row">
-      <button class="service" onclick="openForm('retirement')">Retirement Planning</button>
-      <div class="side-buttons">
-        <a href="https://www.npscra.nsdl.co.in" target="_blank"><button class="button">NPS</button></a>
-        <a href="https://www.licindia.in" target="_blank"><button class="button">LIC Pension</button></a>
-        <a href="https://www.hdfclife.com/retirement-plans" target="_blank"><button class="button">HDFC Retirement</button></a>
-      </div>
-    </div>
-
-    <!-- Service 5 -->
-    <div class="service-row">
-      <button class="service" onclick="openForm('child')">Child Education Plans</button>
-      <div class="side-buttons">
-        <a href="https://www.hdfclife.com/children-insurance-plans" target="_blank"><button class="button">HDFC Child Plan</button></a>
-        <a href="https://www.licindia.in/Products/Insurance-Plan/LICs-New-Children-s-Money-Back-Plan" target="_blank"><button class="button">LIC Child Plan</button></a>
-        <a href="https://www.bajajallianzlife.com/child-plans.html" target="_blank"><button class="button">Bajaj Allianz</button></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Popup Form -->
-  <div class="form-popup" id="quoteForm">
-    <h3>Request a Free Quote</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone Number" required />
-      <textarea placeholder="Your Message" rows="4"></textarea>
-      <button type="submit" class="button">Submit</button>
-      <button type="button" class="button button-cancel" onclick="closeForm()">Cancel</button>
-    </form>
-  </div>
-
-  <footer>
-    <p>📞 98855 39211 | 📧 dtvswamy@yahoo.com</p>
-    <p>Flat No. 101, Golden Park Apartment, Tarakarama Nagar, Karempudi Road, VINUKONDA - 522647, Palnadu Dist.</p>
-    <p>&copy; 2025 D.T.V.S. Swamy. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script type="module" src="js/auth.js"></script>
 </body>
 </html>
